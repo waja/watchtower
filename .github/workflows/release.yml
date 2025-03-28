@@ -85,6 +85,10 @@ jobs:
 
       - name: Login to Docker Hub and GHCR
         uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772
+        env:
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        if: ${{ env.DOCKERHUB_USER != '' && env.DOCKERHUB_TOKEN != '' }}
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
