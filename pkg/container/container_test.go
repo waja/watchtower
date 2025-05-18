@@ -9,6 +9,8 @@ import (
 	"github.com/sirupsen/logrus"
 
 	dockerContainerType "github.com/docker/docker/api/types/container"
+	dockerImageType "github.com/docker/docker/api/types/image"
+	dockerMountType "github.com/docker/docker/api/types/mount"
 	dockerNetworkType "github.com/docker/docker/api/types/network"
 	dockerNat "github.com/docker/go-connections/nat"
 
@@ -79,6 +81,7 @@ var _ = ginkgo.Describe("the container", func() {
 			},
 		)
 	})
+
 	ginkgo.Describe("GetCreateConfig", func() {
 		ginkgo.When("container healthcheck config is equal to image config", func() {
 			ginkgo.It("should return empty healthcheck values", func() {
@@ -174,6 +177,7 @@ var _ = ginkgo.Describe("the container", func() {
 			})
 		})
 	})
+
 	ginkgo.When("asked for metadata", func() {
 		var container *Container
 		ginkgo.BeforeEach(func() {
@@ -632,6 +636,119 @@ var _ = ginkgo.Describe("the container", func() {
 				)
 				gomega.Expect(logOutput.String()).
 					To(gomega.ContainSubstring("No MAC address in legacy config, as expected"))
+			})
+		})
+	})
+
+	ginkgo.Describe("DisableMemorySwappiness Configuration", func() {
+		var mockContainer *Container
+		var defaultMemorySwappiness int64 = 60
+		containerName := "test-container"
+		containerID := "test-container-id"
+
+		WithMemorySwappiness := func(swappiness int64) MockContainerUpdate {
+			return func(c *dockerContainerType.InspectResponse, _ *dockerImageType.InspectResponse) {
+				if c.HostConfig == nil {
+					c.HostConfig = &dockerContainerType.HostConfig{}
+				}
+				c.HostConfig.MemorySwappiness = &swappiness
+			}
+		}
+
+		ginkgo.BeforeEach(func() {
+			mockContainer = MockContainer(WithMemorySwappiness(defaultMemorySwappiness))
+			inspectResponse := dockerContainerType.InspectResponse{
+				ContainerJSONBase: &dockerContainerType.ContainerJSONBase{
+					ID:         containerID,
+					Name:       "/" + containerName,
+					HostConfig: mockContainer.GetCreateHostConfig(),
+					State:      &dockerContainerType.State{Running: true},
+				},
+				Config: &dockerContainerType.Config{},
+			}
+			mockContainer.containerInfo = &inspectResponse
+		})
+
+		ginkgo.When("DisableMemorySwappiness is true", func() {
+			ginkgo.It("sets MemorySwappiness to nil and logs debug message", func() {
+				logOutput := &bytes.Buffer{}
+				logrus.SetOutput(logOutput)
+				logrus.SetLevel(logrus.DebugLevel)
+
+				clog := logrus.WithFields(logrus.Fields{
+					"container": mockContainer.Name(),
+					"id":        mockContainer.ID().ShortID(),
+				})
+				hostConfig := mockContainer.GetCreateHostConfig()
+				disableMemorySwappiness := true
+
+				if disableMemorySwappiness {
+					hostConfig.MemorySwappiness = nil
+					clog.Debug("Disabled memory swappiness for Podman compatibility")
+				}
+
+				gomega.Expect(hostConfig.MemorySwappiness).To(gomega.BeNil(),
+					"MemorySwappiness should be nil when DisableMemorySwappiness is true")
+				gomega.Expect(logOutput.String()).To(gomega.ContainSubstring(
+					"Disabled memory swappiness for Podman compatibility"))
+			})
+		})
+
+		ginkgo.When("DisableMemorySwappiness is false", func() {
+			ginkgo.It("preserves MemorySwappiness and does not log debug message", func() {
+				logOutput := &bytes.Buffer{}
+				logrus.SetOutput(logOutput)
+				logrus.SetLevel(logrus.DebugLevel)
+
+				clog := logrus.WithFields(logrus.Fields{
+					"container": mockContainer.Name(),
+					"id":        mockContainer.ID().ShortID(),
+				})
+				hostConfig := mockContainer.GetCreateHostConfig()
+				disableMemorySwappiness := false
+
+				if disableMemorySwappiness {
+					hostConfig.MemorySwappiness = nil
+					clog.Debug("Disabled memory swappiness for Podman compatibility")
+				}
+
+				gomega.Expect(hostConfig.MemorySwappiness).
+					To(gomega.Equal(&defaultMemorySwappiness),
+						"MemorySwappiness should remain unchanged when DisableMemorySwappiness is false")
+				gomega.Expect(logOutput.String()).NotTo(gomega.ContainSubstring(
+					"Disabled memory swappiness for Podman compatibility"))
+			})
+		})
+	})
+
+	ginkgo.Describe("GetCreateHostConfig", func() {
+		ginkgo.When("container has a volume mount with subpath", func() {
+			ginkgo.It("preserves the subpath in the host config mounts", func() {
+				volumeMount := dockerMountType.Mount{
+					Type:   dockerMountType.TypeVolume,
+					Source: "test_volume",
+					Target: "/config/nest",
+					VolumeOptions: &dockerMountType.VolumeOptions{
+						Subpath: "ha/nest",
+					},
+				}
+
+				container := MockContainer(WithMounts([]dockerMountType.Mount{volumeMount}))
+
+				hostConfig := container.GetCreateHostConfig()
+
+				gomega.Expect(hostConfig.Mounts).To(gomega.HaveLen(1), "Expected exactly one mount")
+				mount := hostConfig.Mounts[0]
+				gomega.Expect(mount.Type).
+					To(gomega.Equal(dockerMountType.TypeVolume), "Mount type should be volume")
+				gomega.Expect(mount.Source).
+					To(gomega.Equal("test_volume"), "Mount source should match")
+				gomega.Expect(mount.Target).
+					To(gomega.Equal("/config/nest"), "Mount target should match")
+				gomega.Expect(mount.VolumeOptions).
+					ToNot(gomega.BeNil(), "VolumeOptions should be set")
+				gomega.Expect(mount.VolumeOptions.Subpath).
+					To(gomega.Equal("ha/nest"), "Subpath should be preserved")
 			})
 		})
 	})
