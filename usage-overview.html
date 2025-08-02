@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/remote-hosts/">
+        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/usage-overview.html">
       
       
-        <link rel="prev" href="../linked-containers/">
+        <link rel="prev" href="introduction.html">
       
       
-        <link rel="next" href="../stop-signals/">
+        <link rel="next" href="arguments.html">
       
       
-      <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Remote Hosts - Watchtower</title>
+        <title>Usage Overview - Watchtower</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/theme.css">
+      <link rel="stylesheet" href="stylesheets/theme.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -87,9 +87,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Remote Hosts
+              Usage Overview
             
           </span>
         </div>
@@ -189,7 +189,7 @@
         <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -222,9 +222,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     Watchtower
@@ -234,7 +234,7 @@
       <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -251,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -270,18 +270,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -297,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -311,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="introduction.html" class="md-nav__link">
         
   
   
@@ -331,10 +333,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../usage-overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="usage-overview.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -345,6 +354,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -402,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arguments/" class="md-nav__link">
+      <a href="arguments.html" class="md-nav__link">
         
   
   
@@ -425,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../container-selection/" class="md-nav__link">
+      <a href="container-selection.html" class="md-nav__link">
         
   
   
@@ -448,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../private-registries/" class="md-nav__link">
+      <a href="private-registries.html" class="md-nav__link">
         
   
   
@@ -471,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-connections/" class="md-nav__link">
+      <a href="secure-connections.html" class="md-nav__link">
         
   
   
@@ -539,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+      <a href="notifications.html" class="md-nav__link">
         
   
   
@@ -562,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metrics/" class="md-nav__link">
+      <a href="metrics.html" class="md-nav__link">
         
   
   
@@ -589,20 +599,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -618,7 +626,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Advanced Features
@@ -632,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linked-containers/" class="md-nav__link">
+      <a href="linked-containers.html" class="md-nav__link">
         
   
   
@@ -652,17 +660,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="remote-hosts.html" class="md-nav__link">
         
   
   
@@ -673,7 +674,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -686,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../stop-signals/" class="md-nav__link">
+      <a href="stop-signals.html" class="md-nav__link">
         
   
   
@@ -709,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lifecycle-hooks/" class="md-nav__link">
+      <a href="lifecycle-hooks.html" class="md-nav__link">
         
   
   
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-multiple-instances/" class="md-nav__link">
+      <a href="running-multiple-instances.html" class="md-nav__link">
         
   
   
@@ -755,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-api-mode/" class="md-nav__link">
+      <a href="http-api-mode.html" class="md-nav__link">
         
   
   
@@ -813,20 +813,65 @@
   
 
 
-  <h1>Remote Hosts</h1>
+  <h1>Usage Overview</h1>
 
-<p>By default, watchtower is set-up to monitor the local Docker daemon (the same daemon running the watchtower container itself). However, it is possible to configure watchtower to monitor a remote Docker endpoint. When starting the watchtower container you can specify a remote Docker endpoint with either the <code>--host</code> flag or the <code>DOCKER_HOST</code> environment variable:</p>
+<p>Watchtower is itself packaged as a Docker container so installation is as simple as pulling the <code>nickfedor/watchtower</code> image. If you are using ARM based architecture, pull the appropriate <code>nickfedor/watchtower:armhf-&lt;tag&gt;</code> image from the <a href="https://hub.docker.com/r/nickfedor/watchtower/tags/">nickfedor Docker Hub</a>.</p>
+<p>Since the watchtower code needs to interact with the Docker API in order to monitor the running containers, you need to mount <em>/var/run/docker.sock</em> into the container with the <code>-v</code> flag when you run it.</p>
+<p><strong>⚠️ Note:</strong> It is recommended to use the latest version of Docker. You can check your host's Docker version using the <a href="https://docs.docker.com/reference/cli/docker/version/">CLI command</a> <code>docker version</code>.
+This version of Watchtower has been tested to support v1.43 and higher; however, don't be surprised if you experience unexpected behavior when attempting to use newer features on older versions of Docker.
+This version autonegotiates the API version by default. If the <code>DOCKER_API_VERSION</code> <a href="https://nicholas-fedor.github.io/watchtower/arguments/#docker_api_version">variable</a> is explicitly set, Watchtower validates the version and falls back to autonegotiation on failure.</p>
+<p>Run the <code>watchtower</code> container with the following command:</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--name<span class="w"> </span>watchtower<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>nickfedor/watchtower<span class="w"> </span>--host<span class="w"> </span><span class="s2">&quot;tcp://10.0.1.2:2375&quot;</span>
-</code></pre></div>
-<p>or</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--name<span class="w"> </span>watchtower<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-e<span class="w"> </span><span class="nv">DOCKER_HOST</span><span class="o">=</span><span class="s2">&quot;tcp://10.0.1.2:2375&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>nickfedor/watchtower
 </code></pre></div>
-<p>Note in both of the examples above that it is unnecessary to mount the <em>/var/run/docker.sock</em> into the watchtower container.</p>
+<p>If pulling images from private Docker registries, supply registry authentication credentials with the environment variables <code>REPO_USER</code> and <code>REPO_PASS</code>
+or by mounting the host's docker config file into the container (at the root of the container filesystem <code>/</code>).</p>
+<p>Passing environment variables:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>watchtower<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">REPO_USER</span><span class="o">=</span>username<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-e<span class="w"> </span><span class="nv">REPO_PASS</span><span class="o">=</span>password<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>nickfedor/watchtower<span class="w"> </span>container_to_watch<span class="w"> </span>--debug
+</code></pre></div>
+<p>Also check out <a href="https://stackoverflow.com/a/30494145/7872793">this Stack Overflow answer</a> for more options on how to pass environment variables.</p>
+<p>Alternatively if you 2FA authentication setup on Docker Hub then passing username and password will be insufficient.  Instead you can run <code>docker login</code> to store your credentials in <code>$HOME/.docker/config.json</code> and then mount this config file to make it available to the Watchtower container:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>watchtower<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span><span class="nv">$HOME</span>/.docker/config.json:/config.json<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>/var/run/docker.sock:/var/run/docker.sock<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>nickfedor/watchtower<span class="w"> </span>container_to_watch<span class="w"> </span>--debug
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Changes to config.json while running</p>
+<p>If you mount <code>config.json</code> in the manner above, changes from the host system will (generally) not be propagated to the
+running container. Mounting files into the Docker daemon uses bind mounts, which are based on inodes. Most
+applications (including <code>docker login</code> and <code>vim</code>) will not directly edit the file, but instead make a copy and replace
+the original file, which results in a new inode which in turn <em>breaks</em> the bind mount.
+<strong>As a workaround</strong>, you can create a symlink to your <code>config.json</code> file and then mount the symlink in the container.
+The symlinked file will always have the same inode, which keeps the bind mount intact and will ensure changes
+to the original file are propagated to the running container (regardless of the inode of the source file!).</p>
+</div>
+<p>If you mount the config file as described above, be sure to also prepend the URL for the registry when starting up your
+watched image (you can omit the https://). Here is a complete docker-compose.yml file that starts up a docker container
+from a private repo on the GitHub Registry and monitors it with watchtower. Note the command argument changing the interval
+to 30s rather than the default 24 hours.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3&quot;</span>
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cavo</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.io/&lt;org&gt;/&lt;image&gt;:&lt;tag&gt;</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;443:3443&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;80:3080&quot;</span>
+<span class="w">  </span><span class="nt">watchtower</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nickfedor/watchtower</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/root/.docker/config.json:/config.json</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--interval 30</span>
+</code></pre></div>
 
 
 
@@ -875,10 +920,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>

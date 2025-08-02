@@ -8,24 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/template-preview/">
+        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/container-selection.html">
       
       
+        <link rel="prev" href="arguments.html">
       
       
-      <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+        <link rel="next" href="private-registries.html">
+      
+      
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Template preview - Watchtower</title>
+        <title>Container Selection - Watchtower</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/theme.css">
+      <link rel="stylesheet" href="stylesheets/theme.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#full_exclude" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Template preview
+              Container Selection
             
           </span>
         </div>
@@ -185,7 +194,7 @@
         <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -218,9 +227,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     Watchtower
@@ -230,7 +239,7 @@
       <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -247,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -307,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="introduction.html" class="md-nav__link">
         
   
   
@@ -330,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usage-overview/" class="md-nav__link">
+      <a href="usage-overview.html" class="md-nav__link">
         
   
   
@@ -357,18 +366,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -384,7 +395,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Configuration
@@ -398,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arguments/" class="md-nav__link">
+      <a href="arguments.html" class="md-nav__link">
         
   
   
@@ -418,10 +429,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../container-selection/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Container Selection
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="container-selection.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -432,6 +463,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#full_exclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Exclude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitor_only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor Only
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -444,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../private-registries/" class="md-nav__link">
+      <a href="private-registries.html" class="md-nav__link">
         
   
   
@@ -467,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-connections/" class="md-nav__link">
+      <a href="secure-connections.html" class="md-nav__link">
         
   
   
@@ -535,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+      <a href="notifications.html" class="md-nav__link">
         
   
   
@@ -558,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metrics/" class="md-nav__link">
+      <a href="metrics.html" class="md-nav__link">
         
   
   
@@ -626,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linked-containers/" class="md-nav__link">
+      <a href="linked-containers.html" class="md-nav__link">
         
   
   
@@ -649,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-hosts/" class="md-nav__link">
+      <a href="remote-hosts.html" class="md-nav__link">
         
   
   
@@ -672,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../stop-signals/" class="md-nav__link">
+      <a href="stop-signals.html" class="md-nav__link">
         
   
   
@@ -695,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lifecycle-hooks/" class="md-nav__link">
+      <a href="lifecycle-hooks.html" class="md-nav__link">
         
   
   
@@ -718,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-multiple-instances/" class="md-nav__link">
+      <a href="running-multiple-instances.html" class="md-nav__link">
         
   
   
@@ -741,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-api-mode/" class="md-nav__link">
+      <a href="http-api-mode.html" class="md-nav__link">
         
   
   
@@ -782,6 +849,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#full_exclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Exclude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitor_only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor Only
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -799,259 +892,74 @@
   
 
 
-  <h1>Template preview</h1>
+  <h1>Container Selection</h1>
 
-<style>
-    #tplprev {
-        margin: 0;
-        display: flex; 
-        flex-direction: column; 
-        row-gap: 1rem; 
-        box-sizing: border-box; 
-        position: relative; 
-        margin-right: -13.3rem
-    }
-    #tplprev textarea {
-        box-decoration-break: slice;
-        overflow: auto;
-        padding: 0.77em 1.18em;
-        scrollbar-color: var(--md-default-fg-color--lighter) transparent;
-        scrollbar-width: thin;
-        touch-action: auto;
-        word-break: normal;
-        height: 420px;
-        flex: 1;
-    }
-    #tplprev .controls {
-        display: flex; 
-        flex-direction: row; 
-        column-gap: 0.5rem
-    }
-    #tplprev textarea, #tplprev input {
-        background-color: var(--md-code-bg-color);
-        border-width: 0;
-        border-radius: 0.1rem;
-        color: var(--md-code-fg-color);
-        font-feature-settings: "kern";
-        font-family: var(--md-code-font-family);
-    }
-    .numfield {
-        font-size: .7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    #tplprev button {
-        border-radius: 0.1rem;
-        color: var(--md-primary-bg-color);
-        background-color: var(--md-primary-fg-color);
-        flex:1; 
-        min-width: 12ch; 
-        padding: 0.5rem
-    }
-    #tplprev button:hover {
-        background-color: var(--md-accent-fg-color);
-    }
-    #tplprev input[type="number"] { width: 5ch; flex: 1; font-size: 1rem; }
-    #tplprev fieldset {
-        margin-top: -0.5rem;
-        display: flex;
-        flex: 1;
-        column-gap: 0.5rem;
-    }
-    #tplprev .template-wrapper {
-        display: flex; 
-        flex:1; 
-        column-gap: 1rem;
-    }
-    #tplprev .result-wrapper {
-        flex: 1; 
-        display: flex
-    }
-    #result {
-        font-size: 0.7rem;
-        background-color: var(--md-code-bg-color);
-        scrollbar-color: var(--md-default-fg-color--lighter) transparent;
-        scrollbar-width: thin;
-        touch-action: auto;
-        overflow: auto;
-        padding: 0.77em 1.18em;
-        margin:0;
-        height: 540px;
-        flex:1; 
-        width:100%
-    }
-    #result b {color: var(--md-code-hl-special-color)}
-    #result i {color: var(--md-code-hl-keyword-color)}
-    #tplprev .loading {
-        position: absolute; 
-        inset: 0; 
-        display: flex; 
-        padding: 1rem; 
-        box-sizing: border-box; 
-        background: var(--md-code-bg-color); 
-        margin-top: 0
-    }
-</style>
-<script src="../assets/wasm_exec.js"></script>
-<script>
-    let wasmLoaded = false;
-    const updatePreview = () => {
-        if (!wasmLoaded) return;
-        const form = document.querySelector('#tplprev');
-        const input = form.template.value;
-        console.log('Input: %o', input);
-        const arrFromCount = (key) => Array.from(Array(form[key]?.valueAsNumber ?? 0), () => key);
-        const states = form.report.value === "yes" ? [
-            ...arrFromCount("skipped"),
-            ...arrFromCount("scanned"),
-            ...arrFromCount("updated"),
-            ...arrFromCount("failed" ),
-            ...arrFromCount("fresh"  ),
-            ...arrFromCount("stale"  ),
-        ] : [];
-        console.log("States: %o", states);
-        const levels = form.log.value === "yes" ? [
-            ...arrFromCount("error"),
-            ...arrFromCount("warning"),
-            ...arrFromCount("info"),
-            ...arrFromCount("debug"),
-        ] : [];
-        console.log("Levels: %o", levels);
-        const output = WATCHTOWER.tplprev(input, states, levels);
-        console.log('Output: \n%o', output);
-        if (output.startsWith('Error: ')) {
-            document.querySelector('#result').innerHTML = `<b>Error</b>: ${output.substring(7)}`;
-        } else if (output.length) {
-            document.querySelector('#result').innerText = output;
-        } else {
-            document.querySelector('#result').innerHTML = '<i>empty (would not be sent as a notification)</i>';
-        }
-    }
-    const formSubmitted = (e) => {
-        //e.preventDefault();
-        //updatePreview();
-    }
-    let debounce;
-    const inputUpdated = () => {
-        if(debounce) clearTimeout(debounce);
-        debounce = setTimeout(() => updatePreview(), 400);
-    }
-    const formChanged = (e) =>  {
-        console.log('form changed: %o', e);
-        const targetToggle = e.target.dataset['toggle'];
-        if (targetToggle) {
-            e.target.form[targetToggle].value = e.target.checked ? "yes" : "no";
-        }
-        updatePreview()
-    }
-    const go = new Go();
-    WebAssembly.instantiateStreaming(fetch("../assets/tplprev.wasm"), go.importObject).then((result) => {
-        go.run(result.instance);
-        document.querySelector('#tplprev .loading').style.display = "none";
-        wasmLoaded = true;
-        updatePreview();
-    });
-</script>
-<form id="tplprev" onchange="formChanged(event)" onsubmit="formSubmitted(event)">
-<pre class="loading">loading wasm...</pre>
-<div class="template-wrapper">
-<textarea name="template" type="text" onkeyup="inputUpdated()">{{- with .Report -}}
-  {{- if ( or .Updated .Failed ) -}}
-{{len .Scanned}} Scanned, {{len .Updated}} Updated, {{len .Failed}} Failed
-    {{- range .Updated}}
-- {{.Name}} ({{.ImageName}}): {{.CurrentImageID.ShortID}} updated to {{.LatestImageID.ShortID}}
-    {{- end -}}
-    {{- range .Fresh}}
-- {{.Name}} ({{.ImageName}}): {{.State}}
-    {{- end -}}
-    {{- range .Skipped}}
-- {{.Name}} ({{.ImageName}}): {{.State}}: {{.Error}}
-    {{- end -}}
-    {{- range .Failed}}
-- {{.Name}} ({{.ImageName}}): {{.State}}: {{.Error}}
-      {{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- if (and .Entries .Report) }}
-
-Logs:
-{{ end -}}
-{{range .Entries -}}{{.Time.Format "2006-01-02T15:04:05Z07:00"}} [{{.Level}}] {{.Message}}{{"\n"}}{{- end -}}</textarea>
+<p>By default, watchtower will watch all containers. However, sometimes only some containers should be updated.</p>
+<p>There are two options:</p>
+<ul>
+<li><strong>Fully exclude</strong>: You can choose to exclude containers entirely from being watched by watchtower.</li>
+<li><strong>Monitor only</strong>: In this mode, watchtower checks for container updates, sends notifications and invokes the <a href="https://nicholas-fedor.github.io/watchtower/lifecycle-hooks/">pre-check/post-check hooks</a> on the containers but does <strong>not</strong> perform the update.</li>
+</ul>
+<h2 id="full_exclude">Full Exclude<a class="headerlink" href="#full_exclude" title="Permanent link">&para;</a></h2>
+<p>If you need to exclude some containers, set the <em>com.centurylinklabs.watchtower.enable</em> label to <code>false</code>.  For clarity this should be set <strong>on the container(s)</strong> you wish to be ignored, this is not set on watchtower.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">dockerfile</label><label for="__tabbed_1_2">docker run</label><label for="__tabbed_1_3">docker-compose</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">LABEL</span><span class="w"> </span>com.centurylinklabs.watchtower.enable<span class="o">=</span><span class="s2">&quot;false&quot;</span>
+</code></pre></div>
 </div>
-<div class="controls">
-<fieldset>
-    <input type="hidden" name="report" value="yes" />
-    <legend><label><input type="checkbox" data-toggle="report" checked /> Container report</label></legend>
-    <label class="numfield">
-        Skipped:
-        <input type="number" name="skipped" value="3" />
-    </label>
-    <label class="numfield">
-        Scanned:
-        <input type="number" name="scanned" value="3" />
-    </label>
-    <label class="numfield">
-        Updated:
-        <input type="number" name="updated" value="3" />
-    </label>
-    <label class="numfield">
-        Failed:
-        <input type="number" name="failed" value="3" />
-    </label>
-    <label class="numfield">
-        Fresh:
-        <input type="number" name="fresh" value="3" />
-    </label>
-    <label class="numfield">
-        Stale:
-        <input type="number" name="stale" value="3" />
-    </label>
-</fieldset>
-<fieldset>
-    <input type="hidden" name="log" value="yes" />
-    <legend><label><input type="checkbox" data-toggle="log" checked /> Log entries</label></legend>
-    <label class="numfield">
-        Error: 
-        <input type="number" name="error" value="1" />
-    </label>
-    <label class="numfield">
-        Warning:
-        <input type="number" name="warning" value="2" />
-    </label>
-    <label class="numfield">
-        Info:
-        <input type="number" name="info" value="3" />
-    </label>
-    <label class="numfield">
-        Debug:
-        <input type="number" name="debug" value="4" />
-    </label>
-</fieldset>
-<button type="submit">Update preview</button>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--label<span class="o">=</span>com.centurylinklabs.watchtower.enable<span class="o">=</span><span class="nb">false</span><span class="w"> </span>someimage
+</code></pre></div>
 </div>
-<div style="result-wrapper">
-    <pre id="result"></pre>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3&quot;</span>
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">someimage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">someimage</span>
+<span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;com.centurylinklabs.watchtower.enable=false&quot;</span>
+</code></pre></div>
 </div>
-</form>
-<script>
-const loadQueryVals = () => {
-    const form = document.querySelector('#tplprev');
-    const params =  new URLSearchParams(location.search);
-    for(const [key, value] of params){
-        form[key].value = value;
-        const toggleInput = form.querySelector(`[data-toggle="${key}"]`);
-        if (toggleInput) {
-            toggleInput.checked = value === "yes";
-        }
-    }
-}
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadQueryVals());
-} else {
-    loadQueryVals();
-}
-</script>
+</div>
+</div>
+<p>If instead you want to <a href="https://nicholas-fedor.github.io/watchtower/arguments/#filter_by_enable_label">only include containers with the enable label</a>, pass the <code>--label-enable</code> flag or the <code>WATCHTOWER_LABEL_ENABLE</code> environment variable on startup for watchtower and set the <em>com.centurylinklabs.watchtower.enable</em> label with a value of <code>true</code> on the containers you want to watch.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">dockerfile</label><label for="__tabbed_2_2">docker run</label><label for="__tabbed_2_3">docker-compose</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">LABEL</span><span class="w"> </span>com.centurylinklabs.watchtower.enable<span class="o">=</span><span class="s2">&quot;true&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--label<span class="o">=</span>com.centurylinklabs.watchtower.enable<span class="o">=</span><span class="nb">true</span><span class="w"> </span>someimage
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3&quot;</span>
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">someimage</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">someimage</span>
+<span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;com.centurylinklabs.watchtower.enable=true&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>If you wish to create a monitoring scope, you will need to <a href="https://nicholas-fedor.github.io/watchtower/running-multiple-instances">run multiple instances and set a scope for each of them</a>.</p>
+<p>Watchtower filters running containers by testing them against each configured criteria. A container is monitored if all criteria are met. For example:</p>
+<ul>
+<li>If a container's name is on the monitoring name list (not empty <code>--name</code> argument) but it is not enabled (<em>centurylinklabs.watchtower.enable=false</em>), it won't be monitored;</li>
+<li>If a container's name is not on the monitoring name list (not empty <code>--name</code> argument), even if it is enabled (<em>centurylinklabs.watchtower.enable=true</em> and <code>--label-enable</code> flag is set), it won't be monitored;</li>
+</ul>
+<h2 id="monitor_only">Monitor Only<a class="headerlink" href="#monitor_only" title="Permanent link">&para;</a></h2>
+<p>Individual containers can be marked to only be monitored (without being updated).</p>
+<p>To do so, set the <em>com.centurylinklabs.watchtower.monitor-only</em> label to <code>true</code> on that container.</p>
+<div class="highlight"><pre><span></span><code><span class="k">LABEL</span><span class="w"> </span>com.centurylinklabs.watchtower.monitor-only<span class="o">=</span><span class="s2">&quot;true&quot;</span>
+</code></pre></div>
+<p>Or, it can be specified as part of the <code>docker run</code> command line:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--label<span class="o">=</span>com.centurylinklabs.watchtower.monitor-only<span class="o">=</span><span class="nb">true</span><span class="w"> </span>someimage
+</code></pre></div>
+<p>When the label is specified on a container, watchtower treats that container exactly as if <a href="https://nicholas-fedor.github.io/watchtower/arguments/#without_updating_containers"><code>WATCHTOWER_MONITOR_ONLY</code></a> was set, but the effect is limited to the individual container. </p>
 
 
 
@@ -1100,10 +1008,10 @@ if (document.readyState === "loading") {
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>

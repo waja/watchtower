@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/introduction/">
+        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/metrics.html">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="notifications.html">
       
       
-        <link rel="next" href="../usage-overview/">
+        <link rel="next" href="linked-containers.html">
       
       
-      <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <link rel="icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Introduction - Watchtower</title>
+        <title>Metrics - Watchtower</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/theme.css">
+      <link rel="stylesheet" href="stylesheets/theme.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supported_architectures" class="md-skip">
+        <a href="#available_metrics" class="md-skip">
           Skip to content
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Metrics
             
           </span>
         </div>
@@ -194,7 +194,7 @@
         <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -227,9 +227,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="index.html" title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="../images/logo-450px.png" alt="logo">
+  <img src="images/logo-450px.png" alt="logo">
 
     </a>
     Watchtower
@@ -239,7 +239,7 @@
       <a href="https://github.com/nicholas-fedor/watchtower/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -256,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -275,20 +275,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -304,7 +302,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -315,30 +313,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
         
   
   
@@ -349,33 +327,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported_architectures" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported Architectures
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -388,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usage-overview/" class="md-nav__link">
+      <a href="usage-overview.html" class="md-nav__link">
         
   
   
@@ -456,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arguments/" class="md-nav__link">
+      <a href="arguments.html" class="md-nav__link">
         
   
   
@@ -479,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../container-selection/" class="md-nav__link">
+      <a href="container-selection.html" class="md-nav__link">
         
   
   
@@ -502,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../private-registries/" class="md-nav__link">
+      <a href="private-registries.html" class="md-nav__link">
         
   
   
@@ -525,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-connections/" class="md-nav__link">
+      <a href="secure-connections.html" class="md-nav__link">
         
   
   
@@ -552,18 +503,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -579,7 +532,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Monitoring & Integration
@@ -593,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notifications/" class="md-nav__link">
+      <a href="notifications.html" class="md-nav__link">
         
   
   
@@ -613,10 +566,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../metrics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Metrics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="metrics.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -627,6 +600,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available_metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Metrics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example_prometheus_scrape_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Prometheus scrape_config
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -684,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linked-containers/" class="md-nav__link">
+      <a href="linked-containers.html" class="md-nav__link">
         
   
   
@@ -707,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-hosts/" class="md-nav__link">
+      <a href="remote-hosts.html" class="md-nav__link">
         
   
   
@@ -730,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../stop-signals/" class="md-nav__link">
+      <a href="stop-signals.html" class="md-nav__link">
         
   
   
@@ -753,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lifecycle-hooks/" class="md-nav__link">
+      <a href="lifecycle-hooks.html" class="md-nav__link">
         
   
   
@@ -776,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-multiple-instances/" class="md-nav__link">
+      <a href="running-multiple-instances.html" class="md-nav__link">
         
   
   
@@ -799,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-api-mode/" class="md-nav__link">
+      <a href="http-api-mode.html" class="md-nav__link">
         
   
   
@@ -847,9 +865,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported_architectures" class="md-nav__link">
+  <a href="#available_metrics" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Architectures
+      Available Metrics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example_prometheus_scrape_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Prometheus scrape_config
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo
     </span>
   </a>
   
@@ -874,26 +910,69 @@
   
 
 
-  <h1>Introduction</h1>
+  <h1>Metrics</h1>
 
-<p>Watchtower is an application that will monitor your running Docker containers and watch for changes to the images that those containers were originally started from. If watchtower detects that an image has changed, it will automatically restart the container using the new image.</p>
-<p>With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.</p>
-<p>For example, let's say you were running Watchtower along with an instance of <em>centurylink/wetty-cli</em> image:</p>
-<div class="highlight"><pre><span></span><code>$ docker ps
-CONTAINER ID   IMAGE                   STATUS          PORTS                    NAMES
-967848166a45   centurylink/wetty-cli   Up 10 minutes   0.0.0.0:8080-&gt;3000/tcp   wetty
-6cc4d2a9d1a5   nickfedor/watchtower   Up 15 minutes                            watchtower
+<div class="admonition warning">
+<p class="admonition-title">Experimental feature</p>
+<p>This feature was added in v1.0.4 and is still considered experimental. If you notice any strange behavior, please raise
+a ticket in the repository issues.</p>
+</div>
+<p>Metrics can be used to track how Watchtower behaves over time.</p>
+<p>To use this feature, you have to set an <a href="arguments.html#http_api_token">API token</a> and <a href="arguments.html#http_api_metrics">enable the metrics API</a>,
+as well as creating a port mapping for your container for port <code>8080</code>.</p>
+<p>The metrics API endpoint is <code>/v1/metrics</code>.</p>
+<h2 id="available_metrics">Available Metrics<a class="headerlink" href="#available_metrics" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>watchtower_containers_scanned</code></td>
+<td>Gauge</td>
+<td>Number of containers scanned for changes by watchtower during the last scan</td>
+</tr>
+<tr>
+<td><code>watchtower_containers_updated</code></td>
+<td>Gauge</td>
+<td>Number of containers updated by watchtower during the last scan</td>
+</tr>
+<tr>
+<td><code>watchtower_containers_failed</code></td>
+<td>Gauge</td>
+<td>Number of containers where update failed during the last scan</td>
+</tr>
+<tr>
+<td><code>watchtower_scans_total</code></td>
+<td>Counter</td>
+<td>Number of scans since the watchtower started</td>
+</tr>
+<tr>
+<td><code>watchtower_scans_skipped</code></td>
+<td>Counter</td>
+<td>Number of skipped scans since watchtower started</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example_prometheus_scrape_config">Example Prometheus <code>scrape_config</code><a class="headerlink" href="#example_prometheus_scrape_config" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">scrape_configs</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">watchtower</span>
+<span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+<span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/v1/metrics</span>
+<span class="w">    </span><span class="nt">bearer_token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">demotoken</span>
+<span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;watchtower:8080&#39;</span>
 </code></pre></div>
-<p>Every day Watchtower will pull the latest <em>centurylink/wetty-cli</em> image and compare it to the one that was used to run the "wetty" container. If it sees that the image has changed it will stop/remove the "wetty" container and then restart it using the new image and the same <code>docker run</code> options that were used to start the container initially (in this case, that would include the <code>-p 8080:3000</code> port mapping).</p>
-<h2 id="supported_architectures">Supported Architectures<a class="headerlink" href="#supported_architectures" title="Permanent link">&para;</a></h2>
-<p>Watchtower supports the following architectures for its Docker images:</p>
-<ul>
-<li>amd64</li>
-<li>i386</li>
-<li>armhf</li>
-<li>arm64v8</li>
-<li>riscv64</li>
-</ul>
+<p>Replace <code>demotoken</code> with the Bearer token you have set accordingly.</p>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<p>The repository contains a demo with prometheus and grafana, available through <code>/examples/metrics/docker-compose.yml</code>. This demo
+is preconfigured with a dashboard, which will look something like this:</p>
+<p><img alt="grafana metrics" src="assets/grafana-dashboard.png" /></p>
 
 
 
@@ -942,10 +1021,10 @@ CONTAINER ID   IMAGE                   STATUS          PORTS                    
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
