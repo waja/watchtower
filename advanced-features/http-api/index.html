@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://nicholas-fedor.github.io/watchtower/advanced-features/http-api/">
       
       
+        <link rel="prev" href="../../notifications/template-preview/">
       
-      <link rel="icon" href="/watchtower/assets/media/favicon.ico">
+      
+        <link rel="next" href="../lifecycle-hooks/">
+      
+      
+      <link rel="icon" href="../../assets/media/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
-        <title>Watchtower</title>
+        <title>HTTP API - Watchtower</title>
       
     
     
-      <link rel="stylesheet" href="/watchtower/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/watchtower/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,13 +50,13 @@
       
     
     
-      <link rel="stylesheet" href="/watchtower/css/timeago.css">
+      <link rel="stylesheet" href="../../css/timeago.css">
     
-      <link rel="stylesheet" href="/watchtower/assets/styles/theme.css">
+      <link rel="stylesheet" href="../../assets/styles/theme.css">
     
-      <link rel="stylesheet" href="/watchtower/assets/styles/extra.css">
+      <link rel="stylesheet" href="../../assets/styles/extra.css">
     
-    <script>__md_scope=new URL("/watchtower/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#http_api" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,12 +97,12 @@
             <div class="md-banner__inner md-grid md-typeset">
                You're not viewing the latest
 version.
-<a href="..//watchtower/">
+<a href="../../..">
   <strong>Click here to go to latest.</strong>
 </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("/watchtower/"),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -103,9 +114,9 @@ version.
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/watchtower/." title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="../.." title="Watchtower" class="md-header__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="/watchtower/assets/media/logo-450px.png" alt="logo">
+  <img src="../../assets/media/logo-450px.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -122,7 +133,7 @@ version.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              HTTP API
             
           </span>
         </div>
@@ -234,7 +245,7 @@ version.
   
   
     <li class="md-tabs__item">
-      <a href="/watchtower/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -253,7 +264,7 @@ version.
   
   
     <li class="md-tabs__item">
-      <a href="/watchtower/quickstart/" class="md-tabs__link">
+      <a href="../../quickstart/" class="md-tabs__link">
         
   
   
@@ -274,7 +285,7 @@ version.
     
     
       <li class="md-tabs__item">
-        <a href="/watchtower/getting-started/overview/" class="md-tabs__link">
+        <a href="../../getting-started/overview/" class="md-tabs__link">
           
   
   
@@ -294,7 +305,7 @@ version.
     
     
       <li class="md-tabs__item">
-        <a href="/watchtower/configuration/arguments/" class="md-tabs__link">
+        <a href="../../configuration/arguments/" class="md-tabs__link">
           
   
   
@@ -314,7 +325,7 @@ version.
     
     
       <li class="md-tabs__item">
-        <a href="/watchtower/notifications/overview/" class="md-tabs__link">
+        <a href="../../notifications/overview/" class="md-tabs__link">
           
   
   
@@ -330,11 +341,13 @@ version.
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/watchtower/advanced-features/http-api/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -374,9 +387,9 @@ version.
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/watchtower/." title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
+    <a href="../.." title="Watchtower" class="md-nav__button md-logo" aria-label="Watchtower" data-md-component="logo">
       
-  <img src="/watchtower/assets/media/logo-450px.png" alt="logo">
+  <img src="../../assets/media/logo-450px.png" alt="logo">
 
     </a>
     Watchtower
@@ -403,7 +416,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -425,7 +438,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         
   
   
@@ -492,7 +505,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/getting-started/overview/" class="md-nav__link">
+      <a href="../../getting-started/overview/" class="md-nav__link">
         
   
   
@@ -515,7 +528,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -538,7 +551,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/getting-started/usage/" class="md-nav__link">
+      <a href="../../getting-started/usage/" class="md-nav__link">
         
   
   
@@ -561,7 +574,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/getting-started/updating-watchtower/" class="md-nav__link">
+      <a href="../../getting-started/updating-watchtower/" class="md-nav__link">
         
   
   
@@ -636,7 +649,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/configuration/arguments/" class="md-nav__link">
+      <a href="../../configuration/arguments/" class="md-nav__link">
         
   
   
@@ -659,7 +672,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/configuration/container-selection/" class="md-nav__link">
+      <a href="../../configuration/container-selection/" class="md-nav__link">
         
   
   
@@ -682,7 +695,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/configuration/private-registries/" class="md-nav__link">
+      <a href="../../configuration/private-registries/" class="md-nav__link">
         
   
   
@@ -705,7 +718,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/configuration/secure-connections/" class="md-nav__link">
+      <a href="../../configuration/secure-connections/" class="md-nav__link">
         
   
   
@@ -780,7 +793,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/notifications/overview/" class="md-nav__link">
+      <a href="../../notifications/overview/" class="md-nav__link">
         
   
   
@@ -803,7 +816,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/notifications/templates/" class="md-nav__link">
+      <a href="../../notifications/templates/" class="md-nav__link">
         
   
   
@@ -826,7 +839,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/notifications/template-preview/" class="md-nav__link">
+      <a href="../../notifications/template-preview/" class="md-nav__link">
         
   
   
@@ -853,28 +866,31 @@ version.
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -887,7 +903,7 @@ version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Advanced Features
@@ -898,10 +914,32 @@ version.
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/http-api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    HTTP API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -912,6 +950,158 @@ version.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http_api_update" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP API Update
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP API Update">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port_configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_parameter_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Parameter Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image Parameter Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no_image_filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Image Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_filtering_with_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Filtering with Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_filtering_without_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Filtering without Tags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduled_updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduled Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -924,7 +1114,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/lifecycle-hooks/" class="md-nav__link">
+      <a href="../lifecycle-hooks/" class="md-nav__link">
         
   
   
@@ -947,7 +1137,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/linked-containers/" class="md-nav__link">
+      <a href="../linked-containers/" class="md-nav__link">
         
   
   
@@ -970,7 +1160,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/metrics/" class="md-nav__link">
+      <a href="../metrics/" class="md-nav__link">
         
   
   
@@ -993,7 +1183,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/remote-hosts/" class="md-nav__link">
+      <a href="../remote-hosts/" class="md-nav__link">
         
   
   
@@ -1016,7 +1206,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/running-multiple-instances/" class="md-nav__link">
+      <a href="../running-multiple-instances/" class="md-nav__link">
         
   
   
@@ -1039,7 +1229,7 @@ version.
   
   
     <li class="md-nav__item">
-      <a href="/watchtower/advanced-features/stop-signals/" class="md-nav__link">
+      <a href="../stop-signals/" class="md-nav__link">
         
   
   
@@ -1079,6 +1269,148 @@ version.
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http_api_update" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP API Update
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP API Update">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port_configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_parameter_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Parameter Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image Parameter Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no_image_filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Image Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_filtering_with_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Filtering with Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image_filtering_without_tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Filtering without Tags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduled_updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduled Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1090,8 +1422,140 @@ version.
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="http_api">HTTP API<a class="headerlink" href="#http_api" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Watchtower has an <a href="../../configuration/arguments/#http_api_mode">optional</a> HTTP API server.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>This is a relatively simple API with significant security implications.</p>
+</div>
+<h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Name</strong></th>
+<th style="text-align: center;"><strong>Endpoint</strong></th>
+<th style="text-align: center;"><strong>Parameters</strong></th>
+<th style="text-align: center;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#http_api_update">Update</a></td>
+<td style="text-align: center;"><code>/v1/update</code></td>
+<td style="text-align: center;"><a href="#image_parameter_usage"><code>image</code></a></td>
+<td style="text-align: center;">Triggers an update of containers monitored by the Watchtower instance</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="../metrics/">Metrics</a></td>
+<td style="text-align: center;"><code>/v1/metrics</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Provides container scan and update information that's typically only seen via logging</td>
+</tr>
+</tbody>
+</table>
+<h3 id="http_api_update">HTTP API Update<a class="headerlink" href="#http_api_update" title="Permanent link">&para;</a></h3>
+<p>To enable this mode, use the <code>--http-api-update</code> CLI argument or the <code>WATCHTOWER_HTTP_API_UPDATE</code> environment variable.</p>
+<h4 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h4>
+<h5 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h5>
+<p>Watchtower uses token-based, header authentication for the HTTP API.</p>
+<p>This should be set using the <a href="../../configuration/arguments/#http_api_token">HTTP API Token</a> configuration option.</p>
+<p>All requests to the <code>/v1/update</code> endpoint will require a <code>Token</code> field in the request header with the predefined HTTP API token value.</p>
+<h5 id="port_configuration">Port Configuration<a class="headerlink" href="#port_configuration" title="Permanent link">&para;</a></h5>
+<p>Watchtower defaults to using port 8080.
+If port 8080 is used by another service, then it can be changed by using the <a href="../../configuration/arguments/#http_api_port">HTTP API Port</a> configuration option.</p>
+<p>Alternatively, if Watchtower is being run via a Docker container, then the <code>host:container</code> port mapping can be updated accordingly (e.g. <code>8080:8080</code> -&gt; <code>9000:8080</code>).</p>
+<h4 id="image_parameter_usage">Image Parameter Usage<a class="headerlink" href="#image_parameter_usage" title="Permanent link">&para;</a></h4>
+<p>Watchtower supports using the <code>image</code> URL query parameter to filter updates for only certain images.</p>
+<h5 id="no_image_filtering">No Image Filtering<a class="headerlink" href="#no_image_filtering" title="Permanent link">&para;</a></h5>
+<p>The following <code>curl</code> command would trigger an update of all container images monitored by Watchtower:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer mytoken&quot;</span><span class="w"> </span>localhost:8080/v1/update
+</code></pre></div>
+<h5 id="image_filtering_with_tags">Image Filtering with Tags<a class="headerlink" href="#image_filtering_with_tags" title="Permanent link">&para;</a></h5>
+<p>You can specify image tags to target containers running a specific version (e.g., <code>foo/bar:1.0</code>).</p>
+<p>For example, to update only containers using <code>foo/bar:1.0</code> and <code>foo/baz:latest</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer mytoken&quot;</span><span class="w"> </span>localhost:8080/v1/update?image<span class="o">=</span>foo/bar:1.0,foo/baz:latest
+</code></pre></div>
+<h5 id="image_filtering_without_tags">Image Filtering without Tags<a class="headerlink" href="#image_filtering_without_tags" title="Permanent link">&para;</a></h5>
+<p>If no tag is provided, Watchtower matches containers regardless of their tag.</p>
+<p>The following <code>curl</code> command would trigger an update for the images <code>foo/bar</code> and <code>foo/baz</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer mytoken&quot;</span><span class="w"> </span>localhost:8080/v1/update?image<span class="o">=</span>foo/bar,foo/baz
+</code></pre></div>
+<h4 id="scheduled_updates">Scheduled Updates<a class="headerlink" href="#scheduled_updates" title="Permanent link">&para;</a></h4>
+<p>By default, enabling this mode prevents periodic polls (i.e. <a href="../../configuration/arguments/#schedule">scheduled</a> or <a href="../../configuration/arguments/#poll_interval">interval</a> polling).
+Use the <a href="../../configuration/arguments/#http_api_periodic_polls">HTTP API Periodic Polls</a> configuration option to allow both API-triggered and scheduled updates.</p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<div class="highlight"><span class="filename">Example Docker Compose Configuration</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">services</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">app-monitored-by-watchtower</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapps/monitored-by-watchtower</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;com.centurylinklabs.watchtower.enable=true&quot;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">watchtower</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nickfedor/watchtower</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock:/var/run/docker.sock</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--http-api-update</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WATCHTOWER_HTTP_API_TOKEN=mytoken</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;com.centurylinklabs.watchtower.enable=false&quot;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080:8080</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</code></pre></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 21, 2025 22:51:24 UTC"><span class="timeago" datetime="2025-08-21T22:51:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 21, 2025 22:51:24 UTC">2025-08-21</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="August 21, 2025 22:51:24 UTC"><span class="timeago" datetime="2025-08-21T22:51:24+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="August 21, 2025 22:51:24 UTC">2025-08-21</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1149,14 +1613,14 @@ version.
     
     
       
-      <script id="__config" type="application/json">{"base": "/watchtower/", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tooltips", "content.tabs.link"], "search": "/watchtower/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tooltips", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/watchtower/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
-        <script src="/watchtower/js/timeago.min.js"></script>
+        <script src="../../js/timeago.min.js"></script>
       
-        <script src="/watchtower/js/timeago_mkdocs_material.js"></script>
+        <script src="../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
